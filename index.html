@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Milo!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Title Screen -->
+        <div id="title-screen" class="screen">
+            <div class="title-content">
+                <h1 class="game-title">Done Ronin</h1>
+                <p class="credits">A nano-game concept developed by uncle Taz for Milo's 13th birthday, using a sprite drawn by Mattz Art.<br> 
+                    Inspired by the nostalgia of playing Prince of Persia on the Amiga 500 when Taz was his age.<br>
+                Copyright Stellaris Consulting Ltd. 2025, All Rights Reserved.</p>
+                <button id="continue-button" class="game-button">Continue</button>
+            </div>
+        </div>
+        
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen">
+            <h1>Done Ronin</h1>
+            <div class="instructions">
+                <p>Help the ronin collect all 13 birthday cakes within 30 seconds to reveal a special celebration screen. Turn on audio and take care with your jumps. <br>Good luck!</p>
+                <p>Controls:</p>
+                <ul>
+                    <li>← → Arrow keys to move left/right</li>
+                    <li>Space bar to jump</li>
+                </ul>
+                <div class="keyboard-image">
+                    <img src="keyboard_icon.png" alt="Keyboard controls" />
+                </div>
+            </div>
+            <button id="start-button" class="game-button">Start Game!</button>
+        </div>
+
+        <!-- Game Screen -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Timer and Score Display -->
+        <div id="hud">
+            <div id="timer">Time: 60</div>
+            <div id="score">Cakes: 0/13</div>
+        </div>
+
+        <!-- Victory Screen -->
+        <div id="victory-screen" class="screen">
+            <div id="birthday-message"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
